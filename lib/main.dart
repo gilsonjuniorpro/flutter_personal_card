@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
               Text(
                 "GENIUS | BILLIONAIRE | PLAYBOY | PHILANTHROPIST",
                 style: TextStyle(
-                  fontSize: 12.0,
+                  fontSize: 9.0,
                   color: Colors.blueGrey.shade100,
                   fontFamily: 'Gabarito',
                   fontWeight: FontWeight.bold,
@@ -60,7 +60,7 @@ class MyApp extends StatelessWidget {
                   title: Text(
                     "+1 999 999-9999",
                     style: TextStyle(
-                      fontSize: 20.0,
+                      fontSize: 16.0,
                       color: Colors.blueGrey.shade900,
                       fontFamily: 'Gabarito',
                       letterSpacing: 2.5,
@@ -82,7 +82,7 @@ class MyApp extends StatelessWidget {
                   title: Text(
                     "tony@stark-industries.com",
                     style: TextStyle(
-                      fontSize: 20.0,
+                      fontSize: 16.0,
                       color: Colors.blueGrey.shade900,
                       fontFamily: 'Gabarito',
                       letterSpacing: 2.5,
