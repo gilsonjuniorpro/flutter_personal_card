@@ -12,8 +12,8 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    const String message = 'Hey_this_is_a_QR_code';
-    const double size = 280.0;
+    const String message = 'https://ondev.ca';
+    const double size = 250.0;
 
     final FutureBuilder<ui.Image> qrFutureBuilder = FutureBuilder<ui.Image>(
       future: _loadOverlayImage(),
@@ -34,10 +34,9 @@ class MyApp extends StatelessWidget {
               dataModuleShape: QrDataModuleShape.circle,
               color: Colors.black,
             ),
-            // size: 320.0,
             embeddedImage: snapshot.data,
             embeddedImageStyle: const QrEmbeddedImageStyle(
-              size: Size.square(60),
+              size: Size.square(1),
             ),
           ),
         );
@@ -52,6 +51,9 @@ class MyApp extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
+                const SizedBox(
+                  height: 25.0,
+                ),
                 const CircleAvatar(
                   radius: 80.0,
                   backgroundImage: AssetImage("images/robert.png"),
